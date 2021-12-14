@@ -4,5 +4,5 @@ import ReactDOM from 'react-dom';
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    ReactDOM.render(document.getElementById('main'));
+    ReactDOM.render(<h1>hi</h1>, document.getElementById('main'));
 });
