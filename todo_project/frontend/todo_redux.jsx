@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import configureStore from './store/store';
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    ReactDOM.render(<h1>hi</h1>, document.getElementById('main'));
+    const store = configureStore();
+    window.store = store;
+    // ReactDOM.render(store, document.getElementById('main'));
 });
